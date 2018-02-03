@@ -1,0 +1,13 @@
+AC_PREREQ(2.65)
+AC_INIT([test_collabocation], [1], [jemc44@gmail.com])
+AM_INIT_AUTOMAKE([1.7.2 foreign])
+AC_PROG_CC
+AC_C_CONST
+AC_PROG_LIBTOOL
+
+AX_CFLAGS_WARN_ALL
+AX_APPEND_COMPILE_FLAGS([-Wwrite-strings])
+AX_GCC_FUNC_ATTRIBUTE([format])
+AX_TYPE_SOCKLEN_T
+
+AC_PROG_OBJC
